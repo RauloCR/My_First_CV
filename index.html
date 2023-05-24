@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Orlando</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Instagram.png" alt="">
+            </div>
+            <h1>RAUL ORLANDO CASTRO RICAURTE</h1>
+            <H2>Estudiante de análisis y desarrollador de Softaware - Énfasis en desarrollo Full Stack</H2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- SECCIÓN SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Orlando Castro.</span> Tengo formación como bachiller académico con orientación militar y
+                actual estudiante de tecnología en análisis y desarrollo de software, con amplia experiencia en servicio
+                al cliente, facilidad en manejo de PQRs y medición de KPIs, control y monitoreo de procesos bajo la
+                norma de calidad ISO 9001. Tengo conocimientos básicos en componentes de motores a gasolina y diésel así
+                como generalidades en el mantenimiento y reparación de los mismos. Adicional, con dominio de
+                herramientas office en nivel intermedio. Comunicación asertiva y propositiva, sé seguir orientaciones
+                con pensamiento crítico, adaptable al trabajo en equipo e individual orientado al logro de objetivos,
+                capacidad de adaptación al cambio y disposición al mejoramiento continuo, comprometido con el trabajo
+                asignado, responsable y puntual, uso de nuevas tecnologías para la resolución de problemas.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            12-12-1995
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            322 8957715
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            castro_raul159@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Web</strong>
+                            www.aúnnotengositioweb.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Cra 5 # 14-38 Funza, Cundinamarca
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Técnico PCM</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- interéses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-bicycle"></i>
+                            <span>CICLISMO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>CULTURA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-money-bill-trend-up"></i>
+                            <span>NEGOCIOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV<i class="fa-solid fa-download"></i>
+                <span>
+                    <cass class="overlay"></cass>
+                </span>
+            </button>
+        </div>
+    </section>
+    <!-- SECCIÓN SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Techinal Skills -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CMR</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Excel</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCIÓN CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Análisis y Desarrollo de Software</h4>
+                        <span class="casa">SENA</span>
+                        <span class="fecha">Diciembre 2022 - Actualmente</span>
+                        <p>El programa de formación tecnológica en Análisis y Desarrollo de Software, está enfocado en
+                            el desarrollo de habilidades alrededor de las actividades inherentes al proceso de creación
+                            de aplicaciones informáticas, de acuerdo con los requerimientos funcionales y técnicos para
+                            una solución de negocio, estableciendo métodos de trabajo individual y en equipo,
+                            potenciando los valores éticos, profesionales y personales, en beneficio de la sociedad y de
+                            la competitividad del país.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo Full Stack</h4>
+                        <span class="casa">Protalento</span>
+                        <span class="fecha">Abril 2023 - Actualmente</span>
+                        <p>El programa está enfocado en adquirir conocimientos de todos los aspectos o “stacks” del
+                            desarrollo web, desde el diseño, la codificación frontend, la codificación back end,
+                            experiencia con hosting, bases de datos, entre otros.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Técnico en Mecánica Automotriz</h4>
+                        <span class="casa">Campoalto</span>
+                        <span class="fecha">Enero 2021 - Pendiente Certificar Prácticas</span>
+                        <p>El programa está dirigido a formar conocimientos, habilidades y las destrezas necesarias para
+                            realizar actividades relacionadas con el funcionamiento, el diagnóstico y la reparación de
+                            la suspensión, la dirección los frenos, la transmisión y los demás componentes de los
+                            vehículos automotores.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Técnico PCM</h4>
+                        <span class="casa">EEMB SAS</span>
+                        <span class="fecha">Enero 2023- Actualmente</span>
+                        <p>Entre las funciones a realizar se destacan la búsqueda y colecta de datos para crear un
+                            sistema de recopilación de información sobre el mantenimiento. Estos datos se recopilan a
+                            través de órdenes de trabajo bien preparadas y con información verdadera con el objetivo de
+                            generar, analizar datos y cuantificar toda la información señalada por los técnicos en el
+                            momento del mantenimiento.Finalmente, la elaboración de un cronograma para establecer el
+                            mantenimiento preventivo y predictivo describiendo: equipos involucrados, actividades a
+                            realizar, responsables, plazo de ejecución, detalles del servicio, entre otros.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Auxiliar Mecánico</h4>
+                        <span class="casa">Macroequipos Bogotá SAS</span>
+                        <span class="fecha">Mayo 2022 - Enero 2023</span>
+                        <p>Buscando desarrollar los conocimientos adquiridos en el estudio del técnico en mecánica
+                            automotriz ingreso a esta distinguida empresa del sector de venta, alquiler, reparación y
+                            mantenimiento para equipos de construcción. Desempeñando diferentes oficios como auxiliar de
+                            mecánico y conductor.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Agente Call Center</h4>
+                        <span class="casa">Apex Co</span>
+                        <span class="fecha">Diciembre 2021 - Mayo 2022</span>
+                        <p>Esta experiencia es bastante gratificante ahora para la campaña WOM Chile. Sigo mejorando
+                            habilidades como vendedor y persuasión del cliente alcanzando objetivos tanto en ventas como
+                            en la calidad de atención.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCIÓN PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- FORMULARIO -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número Teléfono">
+                    <input type="text" placeholder="Dirección de Correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- MAPA -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Cra 5 # 14-38 Funza 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-button"></i>
+                                Llama: 3228957715
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: castro_raul159@hotmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </seccion>
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
